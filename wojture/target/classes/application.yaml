@@ -1,0 +1,36 @@
+my:
+  custom:
+    property: hello from app properties
+    boolean_flag: false
+---
+spring:
+  config:
+    activate:
+      on-profile: jaz
+my:
+  custom:
+    property: Hello from Jaz
+    random: some random value
+  private:
+    radom: im in radom
+    sosnowiec: im in sosnowiec
+
+---
+spring:
+  config:
+    activate:
+      on-profile: pjatk
+my:
+  custom:
+    property: hello from PJATK
+
+---
+#praca-domowa
+spring:
+  config:
+    activate:
+      on-profile: praca_domowa
+my:
+  custom:
+    value_for_test: homework works on profile "praca_domowa"
+    boolean_flag: true
